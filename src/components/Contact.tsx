@@ -49,7 +49,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="border-t border-line">
-      <div className="mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 md:grid-cols-12 md:py-28">
+      <div className="mx-auto grid max-w-6xl gap-12 px-5 py-14 sm:px-8 md:grid-cols-12 md:py-28">
         <div className="md:col-span-5">
           <h2 className="t-section">Contact</h2>
           <p className="measure mt-4 text-muted">

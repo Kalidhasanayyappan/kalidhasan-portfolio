@@ -27,7 +27,7 @@ export default function FeaturedProjects() {
 
   return (
     <section id="projects" className="border-t border-line">
-      <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
+      <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-28">
         <h2 className="t-section">Projects</h2>
 
         {/* Featured case study */}

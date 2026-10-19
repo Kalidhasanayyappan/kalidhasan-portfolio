@@ -3,7 +3,7 @@ import { profile } from "@/data/profile";
 export default function Journey() {
   return (
     <section id="experience" className="border-t border-line bg-sunken/60 surface-transition">
-      <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
+      <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-28">
         <h2 className="t-section">Experience &amp; education</h2>
 
         <div className="mt-12 grid gap-16 md:grid-cols-12">

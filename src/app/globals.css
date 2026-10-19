@@ -4,35 +4,37 @@
 
 /* Design tokens. Light is a warm paper tone, dark is charcoal. Both are tuned separately. */
 :root {
-  --background: #f7f6f2;
-  --surface: #ffffff;
-  --surface-2: #efeee9;
-  --foreground: #20232a;
-  --muted: #5d626d; /* 5.9:1 on --background */
-  --border: #e1e0da;
-  --accent: #355fa8;
+  --background: 247 246 242;
+  --surface: 255 255 255;
+  --surface-2: 239 238 233;
+  --foreground: 32 35 42;
+  --muted: 93 98 109; /* 5.9:1 on --background */
+  --border: 225 224 218;
+  --accent: 53 95 168;
   color-scheme: light;
 }
 
 .dark {
-  --background: #111318;
-  --surface: #191c23;
-  --surface-2: #20242d;
-  --foreground: #f3f4f6;
-  --muted: #a1a7b3;
-  --border: #303541;
-  --accent: #7b9be3; /* lightened from #6488D8 for text contrast on charcoal */
+  --background: 17 19 24;
+  --surface: 25 28 35;
+  --surface-2: 32 36 45;
+  --foreground: 243 244 246;
+  --muted: 161 167 179;
+  --border: 48 53 65;
+  --accent: 123 155 227; /* lightened for text contrast on charcoal */
   color-scheme: dark;
 }
 
 html {
+  -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
+  overflow-x: clip; /* safety net against sideways scroll on phones */
   font-family: var(--font-sans), system-ui, sans-serif;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -53,7 +55,7 @@ h1, h2, h3 {
 .measure { max-width: 62ch; }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid rgb(var(--accent));
   outline-offset: 3px;
   border-radius: 2px;
 }

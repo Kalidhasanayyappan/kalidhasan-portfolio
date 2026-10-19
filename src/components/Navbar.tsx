@@ -68,7 +68,7 @@ export default function Navbar() {
       type="button"
       onClick={toggleTheme}
       aria-label={theme ? themeLabel : "Toggle theme"}
-      className="grid h-10 w-10 place-items-center border border-line text-fg transition-colors hover:bg-sunken"
+      className="grid h-11 w-11 place-items-center border border-line text-fg transition-colors hover:bg-sunken"
     >
       {theme === "dark" ? <Sun size={18} aria-hidden /> : theme === "light" ? <Moon size={18} aria-hidden /> : null}
     </button>
@@ -109,7 +109,7 @@ export default function Navbar() {
             {themeButton}
             <button
               type="button"
-              className="grid h-10 w-10 place-items-center border border-line md:hidden"
+              className="grid h-11 w-11 place-items-center border border-line md:hidden"
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
               aria-controls="mobile-menu"
@@ -120,6 +120,7 @@ export default function Navbar() {
           </div>
         </nav>
 
+      </header>
         <AnimatePresence>
           {open && (
             <motion.div
@@ -128,7 +129,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.18 }}
-              className="fixed inset-x-0 top-16 bottom-0 overflow-y-auto border-t border-line bg-bg px-5 py-6 md:hidden"
+              className="fixed inset-x-0 bottom-0 top-16 z-40 overflow-y-auto border-t border-line bg-bg px-5 py-6 md:hidden"
             >
               <ul className="flex flex-col">
                 {links.map((l) => (
@@ -156,7 +157,6 @@ export default function Navbar() {
             </motion.div>
           )}
         </AnimatePresence>
-      </header>
     </MotionConfig>
   );
 }

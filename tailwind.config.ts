@@ -7,13 +7,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "var(--background)",
-        surface: "var(--surface)",
-        sunken: "var(--surface-2)",
-        fg: "var(--foreground)",
-        muted: "var(--muted)",
-        line: "var(--border)",
-        accent: "var(--accent)",
+        bg: "rgb(var(--background) / <alpha-value>)",
+        surface: "rgb(var(--surface) / <alpha-value>)",
+        sunken: "rgb(var(--surface-2) / <alpha-value>)",
+        fg: "rgb(var(--foreground) / <alpha-value>)",
+        muted: "rgb(var(--muted) / <alpha-value>)",
+        line: "rgb(var(--border) / <alpha-value>)",
+        accent: "rgb(var(--accent) / <alpha-value>)",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],

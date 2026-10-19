@@ -3,7 +3,7 @@ import { profile } from "@/data/profile";
 export default function Skills() {
   return (
     <section id="skills" className="border-t border-line bg-sunken/60 surface-transition">
-      <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
+      <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-28">
         <h2 className="t-section">Skills</h2>
         <p className="measure mt-4 text-muted">Grouped by what I use them for. Where a skill comes from a specific project or role, it&apos;s noted.</p>
 

@@ -3,7 +3,7 @@ import { profile } from "@/data/profile";
 export default function Leadership() {
   return (
     <section id="leadership" className="border-t border-line">
-      <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
+      <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-28">
         <h2 className="t-section">Leadership &amp; Community</h2>
         <p className="measure mt-4 text-muted">{profile.leadershipIntro}</p>
 
